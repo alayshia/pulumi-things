@@ -1,0 +1,36 @@
+# Configuration for deployment settings
+config:
+  # stack name
+  pulumi-service-js:stack:
+  # project name
+  pulumi-service-js:project:
+    # organization name (
+  pulumi-service-js:organization:
+  # dependency skip
+  pulumi-service-js:skipInstallDependencies: true
+  # any preRunCommands. Example adding ssh keys
+  pulumi-service-js:preRunCommands: mkdir /root/.ssh && printf -- "$SSHKEY" > /root/.ssh/id_ed25519, chmod 600 /root/.ssh/id_ed25519, ssh-keyscan github.com >> ~/.ssh/known_hosts, cd .. && git config --global --add url.\"git@github.com:\".insteadOf \"https://github.com\"
+  # Any variables in json format example: '{"key": "value"}'
+  pulumi-service-js:environmentVariables: 
+  # sshkey path
+  pulumi-service-js:sshKeyFilePath: 
+  # OIDC for Google Cloud ; Format Example: '{"projectId": "my-google-project-id", "providerId": "my-google-provider-id", "serviceAccount": "my-svc-account", "workloadPoolId": "my-workload-pool-id", "tokenLifetime": "1h", "region": "us-central1"}'
+  pulumi-service-js:oidcGoogle: 
+  # OIDC for AWS Cloud; EXample '{"roleARN": "arn:aws:iam::XXXXXXXXXXX:role/pulumi-odic", "sessionName": "name_the_session"}'
+  pulumi-service-js:oidcAws: 
+  # git branch
+  pulumi-service-js:gitBranch: 
+  # git repo if using URL
+  pulumi-service-js:githubRepoUrl: 
+  # github access token
+  pulumi-service-js:githubAccessToken:
+  # github repository if using github integrations
+  pulumi-service-js:githubRepository: "alayshia/pulumi-deployments-ssh-example"
+  # Deploy commit feature
+  pulumi-service-js:deployCommits: true
+  # Preview Pull Request Feature
+  pulumi-service-js:previewPullRequests: true
+  # Pull Request Templatr
+  pulumi-service-js:pullRequestTemplate: false
+  # Github repo paths: format example "pulumi-programs/bucket-time/**,!pulumi/programs/bucket-time/README.md"
+  pulumi-service-js:paths:

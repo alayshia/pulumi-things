@@ -1,0 +1,6 @@
+# Pulumi specific
+Pulumi.dev.yaml
+
+# JS specific
+/node_modules/
+package-lock.json*
