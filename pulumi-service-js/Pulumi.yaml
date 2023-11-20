@@ -1,0 +1,6 @@
+name: pulumi-service-js
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+description: Manage Pulumi Cloud using JS
