@@ -1,0 +1,12 @@
+config:
+  # Kube Cloud Provider. Options are minikube, aws, and gcp
+  kubernetes-js:cloudProvider: minikube
+  # Chart name
+  kubernetes-js:chartName: nginx
+  # Chart Version
+  kubernetes-js:chartVersion: 15.4.3
+  # Repository the chart lives
+  kubernetes-js:chartRepo: https://charts.bitnami.com/bitnami
+  kubernetes-js:serviceProtocol: TCP
+  kubernetes-js:serviceTargetPort: 80
+  kubernetes-js:servicePort: 80

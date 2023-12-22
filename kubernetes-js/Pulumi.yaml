@@ -1,0 +1,6 @@
+name: kubernetes-js
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+description: A minimal Kubernetes JavaScript Pulumi program
