@@ -1,0 +1,6 @@
+name: minikube-python
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A simple python example using minikube
