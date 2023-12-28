@@ -42,7 +42,6 @@ service = Service("hello-world",
                   },
                   opts=pulumi.ResourceOptions(provider=minikube_provider))
 
-# result = service.spec.apply(lambda v: v["cluster_ip"] if "cluster_ip" in v else None)
 
 # # Export the service name and endpoint
 service_name = service.metadata["name"]
